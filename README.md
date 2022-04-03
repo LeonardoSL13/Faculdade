@@ -5,4 +5,4 @@
 <br/>
 <div align="center"><img src=""></img></div>
 <h2>About</h2>
-Hi! I'm Leonardo and I'm 22 years old. I am currently studying technology in systems analysis and development at FAPI. Here is my files and algorithms used in college
+Hi! I'm Leonardo and I'm 23 years old. I am currently studying technology in systems analysis and development at FAPI. Here is my files and algorithms used in college
