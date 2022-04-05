@@ -1,9 +1,9 @@
 // 08 – Construa um algoritmo que leia três números diferentes e imprima o maior deles.
 const prompt = require("prompt-sync")();
 
-let num1 = prompt("Digite o primeiro número: ");
-let num2 = prompt("Digite o segundo número: ");
-let num3 = prompt("Digite o terceiro número: ");
+let num1 = parseFloat(prompt("Digite o primeiro número: "));
+let num2 = parseFloat(prompt("Digite o segundo número: "));
+let num3 = parseFloat(prompt("Digite o terceiro número: "));
 
 if (num1 > num2 && num1 > num3) {
 	console.log(`O maior número é ${num1}`);

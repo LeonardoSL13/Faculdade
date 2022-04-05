@@ -11,8 +11,8 @@
 
 const prompt = require("prompt-sync")();
 
-const idade = prompt("Digite sua idade: ");
-const altura = prompt("Digite sua altura(em metros): ");
+const idade = parseInt(prompt("Digite sua idade: "));
+const altura = parseFloat(prompt("Digite sua altura(em metros): "));
 const cor = prompt("Digite a cor da camiseta: ");
 
 if (idade >= 18 && altura >= 1.5 && cor == "laranja") {

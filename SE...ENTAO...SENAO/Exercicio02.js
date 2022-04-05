@@ -1,8 +1,8 @@
 //02 – Crie um algoritmo que leia dois números inteiro e mostre qual é o menor dos dois.
 const prompt = require("prompt-sync")();
 
-let num1 = prompt("Digite o primeiro número: ");
-let num2 = prompt("Digite o segundo número: ");
+let num1 = parseFloat(prompt("Digite o primeiro número: "));
+let num2 = parseFloat(prompt("Digite o segundo número: "));
 
 if (num1 > num2) {
 	console.log(`o ${num2} é o menor número.`);

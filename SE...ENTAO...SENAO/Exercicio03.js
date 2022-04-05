@@ -16,7 +16,7 @@
 
 const prompt = require("prompt-sync")();
 
-let num = prompt("Digite um número de 1 a 12: ");
+let num = parseInt(prompt("Digite um número de 1 a 12: "));
 
 if (num == 1) {
 	console.log("Janeiro");

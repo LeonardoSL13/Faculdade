@@ -5,7 +5,7 @@
 // O número informado é positivo
 const prompt = require("prompt-sync")();
 
-let num = prompt("Digite um número inteiro: ");
+let num = parseInt(prompt("Digite um número inteiro: "));
 
 if (num == 0) {
 	console.log("O número informado é igual a zero.");

@@ -3,9 +3,9 @@
 
 const prompt = require("prompt-sync")();
 
-const diaNascimento = prompt("Digite o dia de nascimento: ");
-const mesNascimento = prompt("Digite o mês de nascimento: ");
-const anoNascimento = prompt("Digite o ano de nascimento: ");
+const diaNascimento = parseInt(prompt("Digite o dia de nascimento: "));
+const mesNascimento = parseInt(prompt("Digite o mês de nascimento: "));
+const anoNascimento = parseInt(prompt("Digite o ano de nascimento: "));
 
 const totalDias =
 	30 * (12 - mesNascimento) +
