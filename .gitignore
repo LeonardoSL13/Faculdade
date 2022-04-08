@@ -1,3 +1,4 @@
-node_modules
-utils
-target
+./node_modules
+./utils
+./target
+./exerciocio01.js
