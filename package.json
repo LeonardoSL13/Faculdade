@@ -1,17 +1,11 @@
 {
-  "name": "algoritmos-base",
+  "name": "falcudade",
   "version": "1.0.0",
-  "description": "Projeto base para disciplina de algoritmos",
-  "main": "index.js",
+  "description": "Projetos feitos para faculdade",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "algoritmos",
-    "javacript",
-    "node"
-  ],
-  "author": "Marcelo Afanaci Junior",
+  "author": "Leonardo Dos Santos Lopes",
   "license": "ISC",
   "dependencies": {
     "prompt-sync": "^4.2.0"
