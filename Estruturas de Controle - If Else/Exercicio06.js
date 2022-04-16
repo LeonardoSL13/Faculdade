@@ -14,6 +14,12 @@ let coragem = prompt("você tem coraguem: ");
 let resistencia = prompt("você tem resistencia: ");
 
 if (coragem == "sim" || resistencia == "sim") {
+	if (coragem == "sim") {
+		console.log("Você tem a coragem nessecaria para entrar");
+	}
+	if (resistencia == "sim") {
+		console.log("Você tem a resistencia nessecaria para entrar");
+	}
 	console.log("Entrada liberada, divirta-se :)");
 } else {
 	console.log("Entrada não permitida =[");
