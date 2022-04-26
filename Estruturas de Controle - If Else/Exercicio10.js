@@ -10,7 +10,7 @@ const anoNascimento = parseInt(prompt("Digite o ano de nascimento: "));
 const totalDias =
 	30 * (12 - mesNascimento) +
 	(30 - diaNascimento) +
-	(2021 - anoNascimento) * 360 +
+	(2020 - anoNascimento) * 360 +
 	1;
 
 console.log(`Você já viveu ${totalDias} dias.`);
