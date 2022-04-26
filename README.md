@@ -40,7 +40,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 $ git clone https://github.com/LeonardoSL13/Faculdade.git
 
 # Instale as dependências
-$ npm i prompt-sync
+$ npm install
 
 
 ```
