@@ -6,25 +6,25 @@
 
 const prompt = require("prompt-sync")();
 
-let categoria = prompt("Digite a categoria: ");
+let categoria = prompt("Digite a categoria(Infantil, Juvenil, Junior, Profissional, Master, Senior): ");
 
-switch (categoria) {
-  case "Infantil":
+switch (categoria.toUpperCase()) {
+  case "INFANTIL":
     console.log("Faixa etária permitida: 7 a 11 anos");
     break;
-  case "Juvenil":
+  case "JUVENIL":
     console.log("Faixa etária permitida: 12 a 14 anos");
     break;
-  case "Junior":
+  case "JUNIOR":
     console.log("Faixa etária permitida: 15 a 20 anos");
     break;
-  case "Profissional":
+  case "PROFISSIONAL":
     console.log("Faixa etária permitida: 21 a 30 anos");
     break;
-  case "Master":
+  case "MASTER":
     console.log("Faixa etária permitida: 31 a 35 anos");
     break;
-  case "Senior":
+  case "SENIOR":
     console.log("Faixa etária permitida: 36 a 40 anos");
     break;
   default:

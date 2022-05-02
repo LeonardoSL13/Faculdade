@@ -4,14 +4,15 @@
 
 const prompt = require("prompt-sync")();
 
-let num1 = parseInt(prompt("Digite o primeiro número: "));
-let num2 = parseInt(prompt("Digite o segundo número: "));
+let num1 = parseInt(prompt("Digite o primeiro número(inteiro e positivo): "));
+let num2 = parseInt(prompt("Digite o segundo número(inteiro e positivo): "));
 
 console.log(`
               1 - Soma
               2 - Subtração
               3 - Multiplicação
-              4 - Divisão`);
+              4 - Divisão
+              `);
 
 let opcao = parseInt(prompt("Digite o código da operação: "));
 

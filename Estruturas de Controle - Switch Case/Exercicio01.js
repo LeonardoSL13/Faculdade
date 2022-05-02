@@ -8,7 +8,8 @@ console.log(`
               2 - venda a vista no cartão de debito
               3 - 1x no cartão de credito
               4 - 3x no cartão de credito
-              5 - 6x no cartão de credito`);
+              5 - 6x no cartão de credito
+              `);
 
 
 let opcao = parseInt(prompt("Digite o código da opção de pagamento: "));

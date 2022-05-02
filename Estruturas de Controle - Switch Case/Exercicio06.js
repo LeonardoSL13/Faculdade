@@ -3,6 +3,21 @@
 
 const prompt = require("prompt-sync")();
 
+console.log(`
+                 1 - Janeiro
+                 2 - Fevereiro
+                 3 - Março
+                 4 - Abril
+                 5 - Maio
+                 6 - Junho
+                 7 - Julho
+                 8 - Agosto
+                 9 - Setembro
+                 10 - Outubro
+                 11 - Novembro
+                 12 - Dezembro
+                 `);
+
 let mes = parseInt(prompt("Digite o código do mês: "));
 
 switch (mes) {
@@ -34,7 +49,7 @@ switch (mes) {
     console.log("inverno");
     break;
   case 10:
-    console.log("inverno");
+    console.log("primavera");
     break;
   case 11:
     console.log("primavera");
