@@ -16,7 +16,9 @@ const sanduiche = {
 	tamanho: "normal",
 	precoFinal: 0,
 	aniversario: false,
+	viajem: false,
 	voucher: 1,
+
 	setPao() {
 		console.log(` 
 		1 - 3 Queijos
@@ -25,7 +27,7 @@ const sanduiche = {
 		4 - Italiano Branco(Origem Vegetal)
 		5 - Granola Salgada
 		6 - Manteiga Temperada
-		 `)
+		 `);
 		const opcao = Number(prompt(`escolha o tipo de pão: `));
 		switch (opcao) {
 			case 1:
@@ -407,12 +409,14 @@ const sanduiche = {
 		if (this.aniversario == true) {
 			this.precoFinal = this.precoFinal * 0.9;
 		}
+		if (this.viajem == true) {
+			this.precoFinal += 1;
+		}
+		this.precoFinal = this.precoFinal * this.voucher;
 
 		return this.precoFinal;
 	},
 };
-
-
 
 sanduiche.setPao();
 console.clear();
@@ -427,7 +431,7 @@ console.clear();
 sanduiche.setMolho();
 console.clear();
 
-if (prompt("deseja dobrar algum ingridientes? (s/n)") == "s") {
+if (prompt("deseja dobrar algum ingredientes? (s/n)") == "s") {
 	console.clear();
 	if (prompt("deseja dobrar a Proteina? (s/n) ") == "s") {
 		sanduiche.qntProteina = 2;
@@ -459,7 +463,15 @@ if (prompt("hoje é seu aniversário? (s/n)") == "s") {
 	sanduiche.aniversario = true;
 }
 console.clear();
+if (prompt("é para viajem? (s/n)") == "s") {
+	sanduiche.viajem = true;
+}
+console.clear();
+
 sanduiche.setVoucher();
 console.clear();
 
-console.log(sanduiche.calcularPreco().toFixed(2));
+console.log(
+	`O preço total do seu sanduiche é:${sanduiche.calcularPreco().toFixed(2)}`
+);
+console.log(sanduiche);	
