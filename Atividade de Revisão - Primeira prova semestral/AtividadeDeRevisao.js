@@ -471,7 +471,20 @@ console.clear();
 sanduiche.setVoucher();
 console.clear();
 
-console.log(
-	`O preço total do seu sanduiche é:${sanduiche.calcularPreco().toFixed(2)}`
+console.log(`
+Seu pedido:
+
+
+Pão       : ${sanduiche.pao}	
+Proteina  : ${sanduiche.proteina},			quantidade: ${sanduiche.qntProteina}
+Adicional : ${sanduiche.adicional},			quantidade: ${sanduiche.qntAdicional}
+Queijo    : ${sanduiche.queijo},			quantidade: ${sanduiche.qntQueijo}
+Vegetal   : ${sanduiche.vegetal},			quantidade: ${sanduiche.qntVegetal}
+Molho     : ${sanduiche.molho},			quantidade: ${sanduiche.qntMolho}
+Tamanho   : ${sanduiche.tamanho}
+Voucher   : ${100 - (100 * sanduiche.voucher)}% de desconto
+${sanduiche.aniversario ? "é seu aniversário você ganha 10% de desconto" : "não é seu aniversário"}
+${sanduiche.viajem ? "Para Viajem" : "não é para viajem"}
+
+O preço total do seu sanduiche é: R$${sanduiche.calcularPreco().toFixed(2)}`
 );
-console.log(sanduiche);	
