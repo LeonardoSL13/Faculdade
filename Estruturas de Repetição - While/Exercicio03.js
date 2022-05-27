@@ -4,6 +4,6 @@
 let i = 1;
 
 while (i <= 15) {
-  console.log('Olá, eu sou uma estrutura de repetição : ' + i);
-  i++;
+	console.log("Olá, eu sou uma estrutura de repetição : " + i);
+	i++;
 }
