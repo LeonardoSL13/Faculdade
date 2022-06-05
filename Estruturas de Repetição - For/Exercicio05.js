@@ -10,9 +10,18 @@
 // Após a gerência da FAPI realizar os cálculos, qual empresa seria mais barato contratar?
 // Qual a diferença de valores entre as empresas?
 
-lastMonth = 1;
+let lastMonth = 1;
+let totalPrice;
 for (let i = 1; i <= 6; i++) {
-  let totalPrice = lastMonth * 2 * i;
-  lastMonth = totalPrice;
+	totalPrice = lastMonth * 2 * i;
+	lastMonth = totalPrice;
 }
-console.log(lastMonth);
+
+console.log(`
+Preço da empresa softwareArt: R$5000
+Preço da empresa furiousCoding: R$${totalPrice}
+
+Mais barato para contratar: softwareArt
+
+Diferença de preço: R$${totalPrice - 5000}
+`);
