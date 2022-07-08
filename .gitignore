@@ -2,3 +2,4 @@
 ./utils
 ./target
 node_modules
+*.rar
