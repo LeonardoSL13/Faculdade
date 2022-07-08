@@ -206,6 +206,8 @@ function jogar() {
 		let jogada = prompt(`${jogador}, digite uma jogada: `);
 
 		if (jogadaValida(jogada)) {
+			rodada++;
+
 			if (jogada == "1") {
 				tabuleiro[0][0] = jogador;
 			} else if (jogada == "2") {
@@ -226,7 +228,6 @@ function jogar() {
 				tabuleiro[2][2] = jogador;
 			}
 
-			rodada++;
 			if (verificaVencedor()) {
 				console.clear();
 				EscreverTabuleiro();
@@ -247,7 +248,7 @@ function jogar() {
 		}
 	}
 
-	if (rodada == 9) {
+	if (rodada == 9 && !verificaVencedor()) {
 		console.clear();
 		EscreverTabuleiro();
 		console.log("Deu velha!");

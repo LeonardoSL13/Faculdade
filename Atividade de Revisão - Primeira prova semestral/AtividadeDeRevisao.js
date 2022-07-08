@@ -455,7 +455,13 @@ if (prompt("deseja dobrar algum ingredientes? (s/n)") == "s") {
 	console.clear();
 }
 
-if (prompt(`deseja dobrar o tamanho do sanduiche por mais R$${(sanduiche.calcularPreco() * 0.75).toFixed(2)} (s/n) `) == "s") {
+if (
+	prompt(
+		`deseja dobrar o tamanho do sanduiche por mais R$${(
+			sanduiche.calcularPreco() * 0.75
+		).toFixed(2)} (s/n) `
+	) == "s"
+) {
 	sanduiche.tamanho = "duplo";
 }
 console.clear();
@@ -482,9 +488,12 @@ Queijo    : ${sanduiche.queijo},			quantidade: ${sanduiche.qntQueijo}
 Vegetal   : ${sanduiche.vegetal},			quantidade: ${sanduiche.qntVegetal}
 Molho     : ${sanduiche.molho},			quantidade: ${sanduiche.qntMolho}
 Tamanho   : ${sanduiche.tamanho}
-Voucher   : ${100 - (100 * sanduiche.voucher)}% de desconto
-${sanduiche.aniversario ? "é seu aniversário você ganha 10% de desconto" : "não é seu aniversário"}
+Voucher   : ${100 - 100 * sanduiche.voucher}% de desconto
+${
+	sanduiche.aniversario
+		? "é seu aniversário você ganha 10% de desconto"
+		: "não é seu aniversário"
+}
 ${sanduiche.viajem ? "Para Viajem" : "não é para viajem"}
 
-O preço total do seu sanduiche é: R$${sanduiche.calcularPreco().toFixed(2)}`
-);
+O preço total do seu sanduiche é: R$${sanduiche.calcularPreco().toFixed(2)}`);
