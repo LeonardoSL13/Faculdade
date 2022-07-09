@@ -14,8 +14,21 @@ let matriz = [
 
 for (let i = 0; i < 3; i++) {
 	for (let j = 0; j < 3; j++) {
-		matriz[i][j] = prompt(`Digite um nome: `);
-		//to do: verificar se o nome já existe
+		let found = false;
+		do {
+			found = false;
+			let name = prompt(`Digite um nome: `);
+			for (let i = 0; i < 3; i++) {
+				for (let j = 0; j < 3; j++) {
+					if (matriz[i][j] == name) {
+						found = true;
+					}
+				}
+			}
+			if (!found) {
+				matriz[i][j] = name;
+			}
+		} while (found);
 	}
 }
 let name = prompt("Digite um nome para procurar na matriz: ");
@@ -28,7 +41,6 @@ for (let i = 0; i < 3; i++) {
 		}
 	}
 }
-
 if (!found) {
 	console.log(`O nome ${name} não foi localizado`);
 }
